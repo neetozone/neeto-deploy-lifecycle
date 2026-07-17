@@ -1,16 +1,12 @@
 # Lifecycle
 
-[![Build
-Status](https://github.com/buildpacks/lifecycle/workflows/build/badge.svg)](https://github.com/buildpacks/lifecycle/actions)
+[![Build Status](https://github.com/buildpacks/lifecycle/workflows/build/badge.svg)](https://github.com/buildpacks/lifecycle/actions)
 [![GoDoc](https://godoc.org/github.com/buildpacks/lifecycle?status.svg)](https://godoc.org/github.com/buildpacks/lifecycle)
 [![codecov](https://codecov.io/gh/buildpacks/lifecycle/branch/main/graph/badge.svg)](https://codecov.io/gh/buildpacks/lifecycle/tree/main)
-[![CII Best
-Practices](https://bestpractices.coreinfrastructure.org/projects/4748/badge)](https://bestpractices.coreinfrastructure.org/projects/4748)
-[![Gitpod
-ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/buildpacks/lifecycle)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4748/badge)](https://bestpractices.coreinfrastructure.org/projects/4748)
+ [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/buildpacks/lifecycle)
 
-A reference implementation of the [Cloud Native Buildpacks
-specification](https://github.com/buildpacks/spec).
+A reference implementation of the [Cloud Native Buildpacks specification](https://github.com/buildpacks/spec).
 
 ## Supported APIs
 | Lifecycle Version | Platform APIs                                                                                                                                    | Buildpack APIs                                                                                                                 |
@@ -58,12 +54,10 @@ specification](https://github.com/buildpacks/spec).
 ### Build
 
 Either:
-* `analyzer` - Reads metadata from the previous image and ensures registry
-  access.
+* `analyzer` - Reads metadata from the previous image and ensures registry access.
 * `detector` - Chooses buildpacks (via `/bin/detect`) and produces a build plan.
-* `restorer` - Restores layer metadata from the previous image and from the
-  cache, and restores cached layers.
-* `builder` - Executes buildpacks (via `/bin/build`).
+* `restorer` - Restores layer metadata from the previous image and from the cache, and restores cached layers.
+* `builder` -  Executes buildpacks (via `/bin/build`).
 * `exporter` - Creates an image and caches layers.
 
 Or:
@@ -78,8 +72,6 @@ Or:
 * `rebaser` - Creates an image from a previous image with updated base layers.
 
 ## Contributing
-- [CONTRIBUTING](CONTRIBUTING.md) - Information on how to contribute and grow
-  your understanding of the lifecycle.
-- [DEVELOPMENT](DEVELOPMENT.md) - Further detail to help you during the
-  development process.
+- [CONTRIBUTING](CONTRIBUTING.md) - Information on how to contribute and grow your understanding of the lifecycle.
+- [DEVELOPMENT](DEVELOPMENT.md) - Further detail to help you during the development process.
 - [RELEASE](RELEASE.md) - Further details about our release process.
